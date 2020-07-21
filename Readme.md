@@ -4,11 +4,12 @@ Implemented the routing information protocol version 2 as specified by [RFC 2453
 This project was developed for inter-pod communication for a set of moving pods.
 Each pod has an internal network and a small radio that can only send messages over a short distance.
 Hence pods can move in and out of range.
-Pods exchange routing information with other pods that are in range and based on these packets they calculates the shortest path to all other pods in the network.
+Pods exchange routing information with other pods that are in range and based on these packets they calculate the shortest path to all other pods in the network.
 Each pod has its own IP address (in addition to the internal network) and sends/receives data from multicast IP.
 The disappearing of pods is simulated by blocking packets from a particular IP.
 
 **Brief Description**
+
 Each RIP packet has upto 25 routing entries and each routing entry has the following fields
 1. IP Address of the internal network of the pod.
 2. The subnet mask
