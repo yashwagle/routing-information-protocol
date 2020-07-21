@@ -23,4 +23,5 @@ This change will be immediately sent on the multicast.
 Any change in the routing table will be immediately sent on the multicast.
 
 **Working of the protocol**
+
 ![](RIPv2Working.gif)
